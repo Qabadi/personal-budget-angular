@@ -53,8 +53,9 @@ div.hero h2 {
     margin: 0;
 }
 
+/*This is an a11y change */
 div.hero h1 {
-    color: #fff;
+    color: #4d5791;
     font-size: 4.2em;
     margin-bottom: 20px;
 }
@@ -75,7 +76,7 @@ main {
 
 footer {
     height: 50px;
-    background-color: #b4c6f0;
+    background-color: #bfc8dd;
     padding: 40px;
 }
 
@@ -100,6 +101,14 @@ main article {
     max-width: 340px;
     text-align: justify;
     margin: 20px;
+}
+
+
+.figure{
+    position: absolute;
+    font-size: large;
+    text-align: left; 
+    font-style: italic;
 }
 
 @media screen and (min-width: 768px) {
