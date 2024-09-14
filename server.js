@@ -2,12 +2,13 @@
 
 const express = require('express');
 const cors = require('cors');
+const fs = require('fs');
 const app = express();
 const port = 3000;
 
 app.use(cors());
 
-const budget = {
+/*const budget = {
     myBudget: [
         {
             title: 'Eat out',
@@ -22,7 +23,9 @@ const budget = {
             budget: 110
         },
     ]
-};
+};*/
+
+let budget = JSON.parse(fs.readFileSync('budget.json', 'utf-8'));
 
 app.use('/', express.static('public'))
 app.get('/budget', (req, res) => {
