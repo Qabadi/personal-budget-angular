@@ -111,7 +111,7 @@
                     </p>
                 </article>
 
-                <article aria-live="polite">
+                <article>
                     <h2>D3js</h2>
     
                     <p>
@@ -177,6 +177,7 @@
                             dataSource.labels[i] = res.data.myBudget[i].title;
                         }
                         createChart();
+                        createD3chart(res.data.myBudget);
                     });
 
             }
